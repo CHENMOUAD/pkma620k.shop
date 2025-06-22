@@ -36,12 +36,8 @@
         .visual-item {
             margin: 0; /* 去除外边距 */
             cursor: pointer; 
-            transition: transform 0.3s ease;
             max-width: 100%;  /* 设置为100%以适应屏幕 */
             height: auto;      /* 高度自动 */
-        }
-        .visual-item:hover {
-            transform: scale(1.1);
         }
         .footer-area {
             margin-top: auto;
@@ -54,7 +50,10 @@
     </style>
 </head>
 <body>
- 
+
+    <div class="header-area">
+        <div class="welcome-message">皆さん、こんにちは、私は藤野秀人です</div>
+    </div>
 
     <div class="media-gallery">
         <img src="https://www.pkma620k.shop/pic/1.png" alt="Image 1" class="visual-item" onclick="krb()">
@@ -63,7 +62,9 @@
         <img src="https://www.pkma620k.shop/pic/4.png" alt="Image 4" class="visual-item" onclick="krb()">
     </div>
 
-
+    <div class="footer-area">
+        <p>投資に関する詳細は、私たちのLINEを通じてご確認ください。</p>
+    </div>
 
     <script>
         function krb() {
